@@ -1,0 +1,9 @@
+<div *ngIf="!isBoxCreated" class="add-container">
+    <div class="icon"></div>
+    <label for="x">X Coordinate:</label>
+    <input type="number" id="xvalue" [(ngModel)]="xCoordinate">
+    <label for="y">Y Coordinate:</label>
+    <input type="number" id="yvalue" [(ngModel)]="yCoordinate">
+    <button (click)="createBox()">Create</button>
+    <button (click)="cancel()">Close</button>
+  </div>

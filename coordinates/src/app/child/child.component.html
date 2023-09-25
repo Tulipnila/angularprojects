@@ -1,0 +1,10 @@
+<div class="box-container">
+  <app-box-info 
+    *ngFor="let box of boxService.boxes$ | async" 
+    [box]="box" 
+    (delete)="onDeleteBox(box)"
+    [isSelected]="box === selectedBox"
+    [class.highlight]="box === selectedBox"
+    (click)="toggleBox(box)">
+  </app-box-info>
+</div>

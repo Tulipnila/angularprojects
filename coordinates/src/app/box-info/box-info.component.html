@@ -1,0 +1,10 @@
+<div class="box-info" 
+  [class.highlight]="isSelected" 
+  (click)="onBoxClick()"
+  tabindex="0"
+  (keydown)="onKeyDown($event)">
+  <span (click)="toggleHighlight()" [class.highlighted]="isHighlighted">
+    X Coordinate: {{ box.x }}, Y Coordinate: {{ box.y }} </span>
+  <button (click)="onDelete()">Delete</button>
+</div>
+  

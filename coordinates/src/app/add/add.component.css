@@ -1,0 +1,21 @@
+.add-container{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    border: 2px solid black;
+    padding:20px;
+    
+   
+}
+input{
+    height: 30px;
+}
+button{
+    width: 80px;
+    height: 30px;
+    background-color: rgba(255, 166, 0, 0.689);
+    cursor: pointer;
+}

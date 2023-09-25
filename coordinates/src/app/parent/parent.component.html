@@ -1,0 +1,11 @@
+<div class="box-container" (dblclick)="onDoubleClick($event)" tabindex="0" (keydown)="onKeyDown($event)">
+  <div
+  *ngFor="let box of boxService.boxes$ | async"
+  class="generated-box"
+  [style.left.px]="box.x"
+  [style.top.px]="box.y"
+  [class.highlight]="box === selectedBox || box === (boxService.highlightedBox$ | async)"
+  (click)="toggleBox(box)"
+  (dblclick)="onBoxDoubleClick($event)"
+  ></div>
+</div>
